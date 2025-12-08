@@ -96,3 +96,12 @@ SELECT * FROM artists WHERE name LIKE '%Prince%';
 
 -- Query 7: Find artists with 'feat' or 'featuring'
 SELECT * FROM artists WHERE name LIKE '%feat%';
+
+
+/*
+SELECT *
+FROM artists
+WHERE year = 2013
+    AND (group_name LIKE 'macklemore'
+    or group_name LIKE '%timberlak')
+*/
