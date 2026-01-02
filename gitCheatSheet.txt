@@ -1,9 +1,0 @@
-# Daily Git Workflow
-cd ~/sql-learning          # Go to directory
-git status                 # See what changed (optional)
-git add .                  # Add all changes
-git commit -m "Message"    # Commit with message
-git push                   # Push to GitHub
-
-# Check if it worked
-# Go to: https://github.com/mshorestech/sql-learning
