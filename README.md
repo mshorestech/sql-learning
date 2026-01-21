@@ -1,30 +1,69 @@
 # SQL Mastery Journey
 
 **Start Date:** January 2, 2025
-**Goal:** Complete SQL proficiency in 12 weeks
-**Target:** Business Systems Analyst / Process Automation Specialist
+**Program Length:** 12 weeks
+**Target Roles:** Business Systems Analyst · Process Automation Specialist
+
+---
+
+## 📌 Scope & Intent
+
+This repository documents a structured, time-boxed SQL mastery program focused on building **production-relevant SQL skills** for business systems, reporting, and automation workflows.
+
+The emphasis is on:
+
+- Writing **clear, readable, and maintainable SQL**
+- Understanding **query execution order and filtering behavior**
+- Developing queries suitable for **analytics, compliance, and automation pipelines**
+- Building a strong foundation for integration with **Python and Microsoft Power Platform**
+
+This is not a collection of isolated syntax exercises. Queries are written and reviewed with long-term maintainability and real-world usage in mind.
+
+---
 
 ## 🎯 Weekly Progress
 
 | Week | Focus | Status |
-|------|-------|--------|
+|------|------|--------|
 | 1 | SELECT, WHERE, ORDER BY, LIMIT, DISTINCT | ✅ Complete |
 | 2 | Aggregate Functions, GROUP BY, COUNT | 🔄 In Progress |
-| 3 | JOINs | ⏳ Pending |
-| 4 | Subqueries & Advanced | ⏳ Pending |
+| 3 | JOINs (inner, left, multi-table) | ⏳ Pending |
+| 4 | Subqueries & Advanced Filtering | ⏳ Pending |
 
-## 📊 Stats
+---
 
-- **Days Completed:** 4
-- **Queries Written:** 100+
-- **Hours Invested:** 12+
-- **Concepts Mastered:** 20+
+## 🧠 Applied Business Use Cases Practiced
+
+Throughout this repository, SQL queries are designed to support common business and operational scenarios, including:
+
+- Filtering and validating records for downstream automation
+- Generating summary metrics for reporting and dashboards
+- Identifying missing, incomplete, or out-of-range data
+- Preparing structured result sets for Python scripts or Power Automate flows
+- Reinforcing patterns used in audit, compliance, and exception reporting
+
+Even when using guided exercises, queries are written as if they were intended for reuse in real systems.
+
+---
+
+## 📊 Practice Metrics
+
+- **Queries written:** 100+
+- **Hours invested:** 12+
+- **Days completed:** 4
+- **Concepts covered:** 20+
+- **Refactoring performed:** Ongoing
+- **Formatting standard:** Explicit clauses, consistent aliases, readable layout
+
+Metrics are tracked to emphasize consistency, repetition, and incremental improvement.
+
+---
 
 ## ✅ Concepts Learned
 
-### Week 1
+### Week 1 — Core Querying & Filtering
 
-#### Day 1 (Jan 2)
+**Day 1 (Jan 2)**
 - SELECT, FROM
 - WHERE (=, >, <, !=, AND, OR)
 - LIKE with wildcards (%)
@@ -32,57 +71,73 @@
 - IS NULL, IS NOT NULL
 - Column aliases (AS)
 - Calculated columns
-- UPDATE
+- UPDATE statements
 
-#### Day 2 (Jan 3)
+**Day 2 (Jan 3)**
 - ORDER BY (ASC, DESC)
 - LIMIT
-- OFFSET (pagination)
+- OFFSET (pagination concepts)
 - DISTINCT
-- Multiple column sorting
+- Multi-column sorting
 
-#### Day 3 (Jan 4)
-- AND, OR, NOT operators
-- Operator precedence (AND before OR)
-- Parentheses for controlling order
-- IN with NOT
-- Calculated conditions in WHERE
-
-#### Day 4 (Jan 5)
-- IN operator deep dive
+**Day 3 (Jan 4)**
+- AND / OR / NOT logic
+- Operator precedence
+- Parentheses for logical control
 - NOT IN
-- Combining operators
+- Complex conditional filtering
 
-### Week 2
+**Day 4 (Jan 5)**
+- IN operator deep dive
+- NOT IN edge cases
+- Combining logical operators effectively
 
-#### Day 5 (Jan 12)
-- COUNT() function
+---
+
+### Week 2 — Aggregation & Execution Flow
+
+**Day 5 (Jan 12)**
+- COUNT()
 - COUNT(*) vs COUNT(column)
 - COUNT(DISTINCT column)
-- SQL execution order (FROM → WHERE → SELECT → LIMIT)
-- SQL formatting best practices
-- WHERE filtering with COUNT
+- SQL logical execution order
+  *(FROM → WHERE → SELECT → LIMIT)*
+- Formatting for readability
+- Filtering considerations when using aggregates
 
-## 🔗 Resources
+---
+
+## 📚 Learning Sources
+
+This repository incorporates exercises and concepts from:
 
 | Resource | Purpose |
-|----------|---------|
-| [SQLBolt](https://sqlbolt.com/) | Hands-on practice |
-| [Mosh SQL Course](https://codewithmosh.com/) | Video explanations |
-| [DataCamp](https://datacamp.com/) | Interactive courses |
-| [Mode Analytics](https://mode.com/sql-tutorial/) | Additional reference |
+|--------|--------|
+| SQLBolt | Hands-on SQL practice |
+| Code with Mosh (SQL Course) | Conceptual explanations |
+| DataCamp | Interactive SQL drills |
+| Mode Analytics SQL Tutorial | Reference and reinforcement |
 
-## 🗄️ Databases
+Where applicable, queries are rewritten or extended beyond the original prompt to reinforce understanding.
+
+---
+
+## 🗄️ Databases Used
 
 | Database | Purpose |
-|----------|---------|
-| sqlbolt.db | SQLBolt exercises |
-| practice.db | General practice |
-| sql_store.db | Mosh course (store) |
-| sql_invoicing.db | Mosh course (invoicing) |
+|--------|--------|
+| `sqlbolt.db` | SQLBolt exercises |
+| `practice.db` | General practice |
+| `sql_store.db` | Mosh course (store schema) |
+| `sql_invoicing.db` | Mosh course (invoicing schema) |
 
-## 📁 File Structure
-```
+Multiple schemas are intentionally used to practice adapting queries across datasets.
+
+---
+
+## 📁 Repository Structure
+
+```text
 sql-learning/
 ├── README.md
 ├── week1/
@@ -92,8 +147,3 @@ sql-learning/
 │   └── practice_day4.sql
 ├── sqlbolt.db
 └── create-sqlbolt-db.sh
-```
-
----
-
-*"Repetition is the mother of skill."*
