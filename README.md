@@ -48,10 +48,10 @@ Even when using guided exercises, queries are written as if they were intended f
 
 ## 📊 Practice Metrics
 
-- **Queries written:** 100+
-- **Hours invested:** 12+
-- **Days completed:** 4
-- **Concepts covered:** 20+
+- **Queries written:** 110+
+- **Hours invested:** 14+
+- **Days completed:** 6
+- **Concepts covered:** 22+
 - **Refactoring performed:** Ongoing
 - **Formatting standard:** Explicit clauses, consistent aliases, readable layout
 
@@ -105,6 +105,12 @@ Metrics are tracked to emphasize consistency, repetition, and incremental improv
 - Formatting for readability
 - Filtering considerations when using aggregates
 
+**Day 6 (Jan 21)**
+- GROUP BY with COUNT
+- SQL clause order (syntax vs execution)
+- Complex filtering with IN and OR (review)
+- Business use case: prioritizing records by group count
+
 ---
 
 ## 📚 Learning Sources
@@ -116,6 +122,7 @@ This repository incorporates exercises and concepts from:
 | SQLBolt | Hands-on SQL practice |
 | Code with Mosh (SQL Course) | Conceptual explanations |
 | DataCamp | Interactive SQL drills |
+| Codefinity | Intermediate SQL concepts |
 | Mode Analytics SQL Tutorial | Reference and reinforcement |
 
 Where applicable, queries are rewritten or extended beyond the original prompt to reinforce understanding.
@@ -136,7 +143,6 @@ Multiple schemas are intentionally used to practice adapting queries across data
 ---
 
 ## 📁 Repository Structure
-
 ```text
 sql-learning/
 ├── README.md
@@ -145,5 +151,15 @@ sql-learning/
 │   ├── day2-orderby-limit.sql
 │   ├── practice_day3.sql
 │   └── practice_day4.sql
+├── week2/
+│   ├── day5-count-intro.sql
+│   └── day6-groupby-intro.sql
 ├── sqlbolt.db
 └── create-sqlbolt-db.sh
+```
+
+---
+
+## 🎯 Up Next
+
+**Day 7:** SUM, AVG, MIN, MAX + GROUP BY combinations
